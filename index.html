@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="CBApp">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple Color Blind Test</title>
+		
+        
+		<script src="lib/jquery.min.js"></script>
+		<script src="lib/angular.min.js.map"></script>
+		<script src="lib/angular-ui-router.min.js"></script>
+        <script src="js/ishihara_plate_tahap_dummy.js"></script>
+        <script src="js/app.js"></script>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+
+		
+    </head>
+ 
+    <body>
+		<div class="header col-sm-12">
+			<h3 class="title col-sm-3">Simple Color Blind Test </h3>
+            <div class="col-sm-5" style="padding:10px">
+			</div>
+			<div class="col-sm-4" style="padding:10px">
+				<a ui-sref="home"><div  class="col-sm-3 btn btn-primary " style="  margin: 0px 10px 0px 0px">Home</div></a>
+				<a ui-sref="guide"><div  class="col-sm-3 btn btn-primary " style="  margin: 0px 10px 0px 0px">Guide</div></a>
+				<a ui-sref="about"><div  class="col-sm-3 btn btn-primary " style="  margin: 0px 10px 0px 0px">About</div></a>
+			</div>
+		</div>
+        <div class="container">
+            
+			<div class="col-sm-3"  style="height:100px">
+				
+			</div>
+			<div  class="col-sm-6" style="border:solid black; border-radius:10px;   overflow: auto" ui-view>
+			</div>
+			<div class="col-sm-3"  style="height:100px"></div>
+        </div>
+		<div class="footer col-sm-12">
+			<h3 >Simple Color Blind Test By Eka Jaya Harsono (2015)</h3>
+		</div>
+    </body>
+</html>
