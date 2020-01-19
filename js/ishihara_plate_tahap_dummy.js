@@ -166,7 +166,7 @@ function ishi_buat(a,b,c,numb,ind) {
 			ishi_draw(dots);
 	
 		}
-		img.src ='http://localhost/color_blind_test_app/picture/' + numb +'.jpg';
+		img.src ='/color_blind_test_app/picture/' + numb +'.jpg';
 		image.crossOrigin="anonymous";
 	}
 	else{

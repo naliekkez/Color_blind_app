@@ -64,7 +64,7 @@ app.directive('test', function(testFactory) {
 					
 					scope.answerMode = true;
 					document.getElementById("submit_button").disabled = false;
-					document.getElementById("next_button").disabled = true;
+					
 				} else {
 					scope.score = Math.round((scope.score/scope.many)*10000)/100;
 					scope.testOver = true;
